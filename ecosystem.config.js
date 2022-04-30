@@ -21,7 +21,7 @@ module.exports = {
       repo: 'git@github.com:Shineee/shinetalk.git',
       path: '/home/shine/web/dev/shinetalk',
       'pre-deploy-local': '',
-      'post-deploy': 'pm2 startOrRestart ecosystem.config.js',
+      'post-deploy': 'pm2 startOrRestart ./current/ecosystem.config.js',
       'pre-setup': 'rm -rf /home/shine/web/dev/shinetalk/source'
     },
     pre: {

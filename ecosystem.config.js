@@ -22,7 +22,8 @@ module.exports = {
       path: '/home/shine/web/dev/shinetalk',
       'pre-deploy-local': '',
       'post-deploy': 'pm2 startOrRestart ./current/ecosystem.config.js',
-      'pre-setup': 'rm -rf /home/shine/web/dev/shinetalk/source'
+      'pre-setup': 'rm -rf /home/shine/web/dev/shinetalk/source',
+      'post-setup': ''
     },
     pre: {
       user: 'shine',

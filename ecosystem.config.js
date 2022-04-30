@@ -1,11 +1,14 @@
 module.exports = {
   apps: [{
+    name: "dev.shinetalk.wang",
     script: 'dev-server.js',
     watch: '.'
   }, {
+    name: "pre.shinetalk.wang",
     script: 'pre-server.js',
     watch: '.'
   }, {
+    name: "www.shinetalk.wang",
     script: 'www-server.js',
     watch: '.'
   }],
@@ -18,8 +21,8 @@ module.exports = {
       repo: 'git@github.com:Shineee/shinetalk.git',
       path: '/home/shine/web/dev/shinetalk',
       'pre-deploy-local': '',
-      'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production',
-      'pre-setup': ''
+      'post-deploy': 'pm2 startOrRestart ecosystem.config.js',
+      'pre-setup': 'rm -rf /home/shine/web/dev/shinetalk/source'
     },
     pre: {
       user: 'shine',
@@ -28,9 +31,9 @@ module.exports = {
       repo: 'git@github.com:Shineee/shinetalk.git',
       path: '/home/shine/web/pre/shinetalk',
       'pre-deploy-local': '',
-      'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env pre',
+      'post-deploy': 'npm install && pm2 reload ecosystem.config.js',
       'pre-setup': ''
-    }, 
+    },
     www: {
       user: 'shine',
       host: 'shinetalk.wang',

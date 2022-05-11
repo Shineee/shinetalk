@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  nav(class="uk-navbar-container",uk-navbar)
+    div(class="uk-navbar-left")
+      ul(class="uk-navbar-nav")
+        li(class="uk-active")
+          a(href="#") Active
+        li
+          a(href="#") Parent
+          div(class="uk-navbar-dropdown")
+            ul(class="uk-nav uk-navbar-dropdown-nav")
+              li(class="uk-active")
+                a(href="#") Active
+              li
+                a(href="#") Item
+              li
+                a(href="#") Item
+        li
+          a(href="#") Item
+

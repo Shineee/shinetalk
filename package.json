@@ -1,0 +1,24 @@
+{
+  "name": "shinetalk",
+  "version": "0.1.16",
+  "private": true,
+  "scripts": {
+    "www": "cross-env PORT=8082 pm2 startOrRestart www-server.config.js",
+    "pre": "cross-env PORT=8081 pm2 startOrRestart pre-server.config.js",
+    "dev": "cross-env PORT=8080 pm2 startOrRestart dev-server.config.js",
+    "local": "nodemon ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "cross-env": "^7.0.3",
+    "debug": "~2.6.9",
+    "element-ui": "^2.15.8",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

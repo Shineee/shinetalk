@@ -1,8 +1,10 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.width-match-parent{
+  width: 100vw;
 }
-
-a {
-  color: #00B7FF;
+.height-match-parent{
+  height: 100vh;
+}
+.match-parent{
+  width: 100vw;
+  height: 100vh;
 }

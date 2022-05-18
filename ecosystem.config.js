@@ -19,7 +19,7 @@ module.exports = {
       path: '/home/shine/web/pre/shinetalk',
       'pre-deploy-local': '',
       'post-deploy': 'npm install && npm run pre',
-      'pre-setup': ''
+      'pre-setup': 'rm -rf /home/shine/web/pre/shinetalk/source',
     },
     www: {
       user: 'shine',
@@ -29,7 +29,7 @@ module.exports = {
       path: '/home/shine/web/www/shinetalk',
       'pre-deploy-local': '',
       'post-deploy': 'npm install && npm run www',
-      'pre-setup': ''
+      'pre-setup': 'rm -rf /home/shine/web/www/shinetalk/source',
     }
   }
 };

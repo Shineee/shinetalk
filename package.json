@@ -1,7 +1,10 @@
 {
   "name": "shinetalk",
-  "version": "0.1.16",
+  "version": "0.1.18",
   "private": true,
+  "description": "",
+  "time": "2022-05-17",
+  "title": "阳哥说全栈",
   "scripts": {
     "www": "cross-env PORT=8082 pm2 startOrRestart www-server.config.js",
     "pre": "cross-env PORT=8081 pm2 startOrRestart pre-server.config.js",

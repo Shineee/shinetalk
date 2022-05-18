@@ -1,11 +1,15 @@
 doctype html
 html
   head
-    title= title
+    title= package.title
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css')
+    link(rel='stylesheet' href='/stylesheets/style.css')
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css')
     script(src='https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js')
     script(src='https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js')
-  body
-    block content
+  body(class="")
+    div(class="uk-flex uk-flex-column match-parent")
+      div(class="")
+        block content
+      div(class="uk-flex uk-flex-1 uk-flex-bottom")
+        div(class="uk-margin-left uk-margin-small")= "v"+package.version+" "+package.time

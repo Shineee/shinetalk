@@ -9,7 +9,37 @@ html
     script(src='https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js')
   body(class="")
     div(class="uk-flex uk-flex-column match-parent")
-      div(class="")
+      nav(class="uk-navbar-container" uk-navbar)
+        div(class="uk-navbar-left" )
+          a(href="/" class="uk-navbar-item uk-logo") 阳哥说全栈
+          ul(class="uk-navbar-nav")
+            li(class="uk-active")
+              a(href="/nav") 网址导航
+            li
+              a(href="/tech/index") 技术图谱
+              div(class="uk-navbar-dropdown")
+                ul(class="uk-nav uk-navbar-dropdown-nav")
+                  li(class="uk-active")
+                    a(href="/tech/html") HTML
+                  li
+                    a(href="/tech/css") CSS
+                  li
+                    a(href="/tech/javascript") JavaScript
+                  li
+                    a(href="/tech/nodejs") NodeJS
+            li
+              a(href="/english/index") 英语
+              div(class="uk-navbar-dropdown")
+                ul(class="uk-nav uk-navbar-dropdown-nav")
+                  li(class="uk-active")
+                    a(href="/english/listen") 听
+                  li
+                    a(href="/english/speak") 说
+                  li
+                    a(href="/english/read") 读
+                  li
+                    a(href="/english/write") 写
+      div(class="uk-flex uk-margin-left uk-margin-top")
         block content
       div(class="uk-flex uk-flex-1 uk-flex-bottom")
         div(class="uk-margin-left uk-margin-small")= "v"+package.version+" "+package.time

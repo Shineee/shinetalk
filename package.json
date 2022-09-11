@@ -1,8 +1,8 @@
 {
   "name": "shinetalk",
-  "version": "0.1.22",
-  "time": "2022-05-30",
-  "title": "阳哥说全栈",
+  "version": "0.2.0",
+  "time": "2022-09-11",
+  "title": "阳哥说",
   "private": true,
   "description": "",
   "scripts": {
@@ -22,6 +22,6 @@
     "morgan": "~1.9.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.19"
   }
 }
